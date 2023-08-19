@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Item Form</title>
+</head>
+
+<body>
+  <div class="container my-3 mx-auto">
+    <a href="../index.html" class="btn btn-outline-dark"> Go to Home</a>
+  </div>
+  <!-- Add book form start  -->
+  <div class="addproduct w-50 mx-auto my-3 p-2 shadow p-3 mb-5 bg-white rounded">
+    <h2>Add Book Details</h2>
+    <form id="addProductForm">
+      <label>Book ID:</label>
+      <input type="text" class="w-100 py-1 border border-secondary ">
+      <label for="productName">Book Name:</label>
+      <input type="text" id="productName" class="w-100 py-1 border border-secondary" required>
+      <label for="productCategory">Book Category:</label>
+      <select id="productCategory" class="form-select w-100" aria-label="Select Category">
+        <option selected disabled>Select Category</option>
+        <option value="Education">Education</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Fitness">Fitness</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Novel">Novel</option>
+        <option value="Science">Science</option>
+        <option value="Self Help">Self Help</option>
+        <option value="Technology">Technology</option>
+      </select>
+      <label>Book Discription:</label>
+      <textarea class="w-100 py-1 border border-secondary"></textarea>
+      <label for="productImage">Select image:</label>
+      <input type="file" id="productImage" accept="image/*" required class="w-100 p-1 border border-secondary rounded">
+      <label for="productPrice">Price:</label>
+      <input type="number" id="productPrice" class="w-100 py-1 border border-secondary" required>
+      <input type="submit" class="w-100 btn btn-outline-dark my-2">
+    </form>
+    <a href="./product.html" class="w-100 mx-auto rounded btn-outline-dark btn">view added products</a>
+  </div>
+  <!-- Add book form end -->
+
+  <!-- <h1>Add a New Product</h1>
+    <form id="addProductForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productImage">Product Image:</label>
+        <input type="file" id="productImage" accept="image/*" required>
+
+        <label for="productCategory">Product Category:</label>
+        <select id="productCategory" required>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option> -->
+  <!-- Add more categories as needed -->
+  <!-- </select>
+
+        <button type="submit">Add Product</button>
+    </form> -->
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="js/itemsController.js"></script> -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
